@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cardArray.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid')
-    const resultDisplay = document.querySelector('#result')
+    // const resultDisplay = document.querySelector('#result')
     let cardsChosen = []
     let cardsChosenId = []
     let cardsWon = []
@@ -69,8 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function checkForMatch() {
-        const cards = document.querySelectorAll('img')
-        // querySelectorAll is selecting banner..
+        const cards = document.querySelectorAll('img:not([class])')
         const optionOneId = cardsChosenId[0]
         const optionTwoId = cardsChosenId[1]
 
@@ -91,12 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[optionTwoId].setAttribute('src', 'images/pokeball.png')
             alert('As if!')
         }
-        cardsChosen = []
-        cardsChosenId = []
-        resultDisplay.textContent = cardsWon.length
-        if (cardsWon.length === cardArray.length/2) {
-            resultDisplay.textContent = 'You Da Bomb!!'
-        }
+        // cardsChosen = []
+        // cardsChosenId = []
+        // resultDisplay.textContent = cardsWon.length
+        // if (cardsWon.length === cardArray.length/2) {
+        //     resultDisplay.textContent = 'Pokemon Master!'
+        // }
     }
 
     function flipCard() {
