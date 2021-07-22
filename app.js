@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cardArray.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid')
-    // const resultDisplay = document.querySelector('#result')
+    const resultDisplay = document.querySelector('#result')
     let cardsChosen = []
     let cardsChosenId = []
     let cardsWon = []
@@ -76,10 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if(optionOneId == optionTwoId) {
             cards[optionOneId].setAttribute('src', 'images/pokeball.png')
             cards[optionTwoId].setAttribute('src', 'images/pokeball.png')
-            alert('Dude, you clicked the same image')
+            alert('Click on another pokeball to find matching pokemon!')
         }
         else if (cardsChosen[0] === cardsChosen[1]) {
-            alert('Booyah!')
+            alert('Gotcha!')
             cards[optionOneId].setAttribute('src', 'images/gotcha.png')
             cards[optionTwoId].setAttribute('src', 'images/gotcha.png')
             cards[optionOneId].removeEventListener('click', flipCard)
@@ -88,14 +88,14 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             cards[optionOneId].setAttribute('src', 'images/pokeball.png')
             cards[optionTwoId].setAttribute('src', 'images/pokeball.png')
-            alert('As if!')
+            alert('Oh no! The Pokemon got away!')
         }
-        // cardsChosen = []
-        // cardsChosenId = []
-        // resultDisplay.textContent = cardsWon.length
-        // if (cardsWon.length === cardArray.length/2) {
-        //     resultDisplay.textContent = 'Pokemon Master!'
-        // }
+        cardsChosen = []
+        cardsChosenId = []
+        resultDisplay.textContent = cardsWon.length
+        if (cardsWon.length === cardArray.length/2) {
+            resultDisplay.textContent = 'Pokemon Master!'
+        }
     }
 
     function flipCard() {
