@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img')
-            card.setAttribute('src', 'images/background.png')
+            card.setAttribute('src', 'images/pokeball.png')
             card.setAttribute('id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -74,20 +74,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
 
         if(optionOneId == optionTwoId) {
-            cards[optionOneId].setAttribute('src', 'images/background.png')
-            cards[optionTwoId].setAttribute('src', 'images/background.png')
+            cards[optionOneId].setAttribute('src', 'images/pokeball.png')
+            cards[optionTwoId].setAttribute('src', 'images/pokeball.png')
             alert('Dude, you clicked the same image')
         }
         else if (cardsChosen[0] === cardsChosen[1]) {
             alert('Booyah!')
-            cards[optionOneId].setAttribute('src', 'images/pattern.png')
-            cards[optionTwoId].setAttribute('src', 'images/pattern.png')
+            cards[optionOneId].setAttribute('src', 'images/gotcha.png')
+            cards[optionTwoId].setAttribute('src', 'images/gotcha.png')
             cards[optionOneId].removeEventListener('click', flipCard)
             cards[optionTwoId].removeEventListener('click', flipCard)
             cardsWon.push(cardsChosen)
         } else {
-            cards[optionOneId].setAttribute('src', 'images/background.png')
-            cards[optionTwoId].setAttribute('src', 'images/background.png')
+            cards[optionOneId].setAttribute('src', 'images/pokeball.png')
+            cards[optionTwoId].setAttribute('src', 'images/pokeball.png')
             alert('As if!')
         }
         cardsChosen = []
