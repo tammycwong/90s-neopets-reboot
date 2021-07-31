@@ -2,52 +2,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const cardArray = [
         {
-            name: 'Lickitung',
-            img: 'images/lickitung.png',
+            name: 'bulbasaur',
+            img: 'images/bulbasaur.jpg',
         },
         {
-            name: 'grimer',
-            img: 'images/grimer.png',
+            name: 'charmander',
+            img: 'images/charmander.png',
         },
         {
-            name: 'omanyte',
-            img: 'images/omanyte.png',
-        },
-        {
-            name: 'cubone',
-            img: 'images/cubone.png',
-        },
-        {
-            name: 'Snorlax',
-            img: 'images/snorlax.png',
-        },
-        {
-            name: 'gengar',
-            img: 'images/gengar.png',
-        },
-        {
-            name: 'Lickitung',
-            img: 'images/lickitung.png',
-        },
-        {
-            name: 'grimer',
-            img: 'images/grimer.png',
-        },
-        {
-            name: 'omanyte',
-            img: 'images/omanyte.png',
+            name: 'magikarp',
+            img: 'images/magikarp.png',
         },
         {
             name: 'cubone',
             img: 'images/cubone.png',
         },
         {
-            name: 'Snorlax',
-            img: 'images/snorlax.png',
+            name: 'pikachu',
+            img: 'images/pikachu.png',
         },
         {
-            name: 'gengar',
-            img: 'images/gengar.png',
+            name: 'squirtle',
+            img: 'images/squirtle.png',
+        },
+        {
+            name: 'bulbasaur',
+            img: 'images/bulbasaur.jpg',
+        },
+        {
+            name: 'charmander',
+            img: 'images/charmander.png',
+        },
+        {
+            name: 'cubone',
+            img: 'images/cubone.png',
+        },
+        {
+            name: 'magikarp',
+            img: 'images/magikarp.png',
+        },
+        {
+            name: 'pikachu',
+            img: 'images/pikachu.png',
+        },
+        {
+            name: 'squirtle',
+            img: 'images/squirtle.png',
         }
     ]
     cardArray.sort(() => 0.5 - Math.random())
