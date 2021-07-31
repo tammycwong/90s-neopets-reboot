@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             name: 'bulbasaur',
-            img: 'images/bulbasaur.jpg',
+            img: 'images/bulbasaur.png',
         },
         {
             name: 'charmander',
