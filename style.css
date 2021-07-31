@@ -8,10 +8,12 @@
 
 body {
     text-align: center;
-    background: url('images/background.jpg');
-    background-repeat: no-repeat;
+    background: url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Common Pixel', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
                                                 
 }
 .banner {
