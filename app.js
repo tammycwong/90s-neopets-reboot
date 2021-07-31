@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             const card = document.createElement('img')
-            card.setAttribute('src', 'images/pokeball.png')
+            card.setAttribute('src', 'https://i.pinimg.com/originals/1b/41/20/1b412053a7b59ab47149a3eb59e5804d.png')
             card.setAttribute('id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -94,7 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsChosenId = []
         resultDisplay.textContent = cardsWon.length
         if (cardsWon.length === cardArray.length/2) {
-            resultDisplay.textContent = 'Pokemon Master!'
+            resultDisplay.textContent = 'Gengar, Snorlax was sent to Bills PC'
+
         }
     }
 
