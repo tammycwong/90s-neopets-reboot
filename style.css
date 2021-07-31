@@ -18,16 +18,5 @@ img {
     height: 200px;
     width: 200px;
     padding: 10px;
-    display: block;
-    position: relative;
 }
-img::after {
-    content: '';
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1; 
-}
+
