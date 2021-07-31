@@ -3,6 +3,7 @@ body {
     background: url('images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: transparent;
 }
 .banner {
     width: 900px;
