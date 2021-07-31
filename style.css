@@ -1,5 +1,8 @@
 body {
     text-align: center;
+    background: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .banner {
     width: 900px;
