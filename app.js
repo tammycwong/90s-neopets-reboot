@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsChosenId = []
         resultDisplay.textContent = cardsWon.length
         if (cardsWon.length === cardArray.length/2) {
-            resultDisplay.textContent = 'Gengar, Snorlax was sent to Bills PC'
+            resultDisplay.textContent = 'Pokemon was sent to Bills PC'
 
         }
     }

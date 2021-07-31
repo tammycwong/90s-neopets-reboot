@@ -1,8 +1,12 @@
+@import url('http://fonts.cdnfonts.com/css/common-pixel');
+
 body {
     text-align: center;
     background: url('images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Common Pixel', sans-serif;
+                                                
 }
 .banner {
     width: 900px;
